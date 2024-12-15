@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasr Beauty - Savon pour le Corps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Nasr Beauty</a>
+            </div>
+            <div class="navbar-toggle">
+                <span>&#9776;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#shop">Nos Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Panier</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des produits..." />
+                <button type="submit">Rechercher</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-single">
+        <div class="product-image">
+            <img src="photo produit.png" alt="Savon pour le Corps Nasr Beauty">
+        </div>
+        <div class="product-details">
+            <h2>Savon Nourrissant pour le Corps</h2>
+            <p>Ce savon pour le corps, riche en huiles essentielles naturelles, nourrit et hydrate votre peau en profondeur. Sa formule douce est idéale pour tous les types de peau.</p>
+            <ul>
+                <li>Ingrédients : Huiles essentielles, beurre de karité, glycérine</li>
+                <li>Bienfaits : Hydratation, Douceur, Régénération</li>
+                <li>Poids : 150g</li>
+            </ul>
+            <p class="price">12,90€</p>
+
+            <div class="quantity">
+                <label for="quantity">Quantité :</label>
+                <div class="dropdown">
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="addToCart">Ajouter au panier</button>
+            <div id="cartMessage" class="hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nasr Beauty - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
